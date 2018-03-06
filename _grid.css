@@ -1,0 +1,48 @@
+.container {
+  font-family: 'Nanum Pen Script', cursive;
+  font-size: 30px;
+  display: grid;
+  grid-template-columns: 100px minmax(150px, max-content) minmax(150px, max-content) 150px;
+  grid-template-rows: repeat(3, minmax(100px, max-content));
+  grid-gap: 10px;
+  padding-left: 400px;
+  padding-right: 400px;
+}
+
+.header {
+  background-color: #71C9CE;
+  padding: 20px;
+  grid-column: 1 / 4;
+}
+
+p {
+  margin: 0;
+}
+
+.title {
+  font-size: 50px;
+}
+
+.trophies {
+  border: 2px solid #ABEDD8;
+  background-color: #CBF1F5;
+  grid-row: 2 / -1;
+}
+
+.info {
+  border: 2px solid #71C9CE;
+  background-color: #ABEDD8;
+  grid-column: 4 / 5;
+  grid-row: 1 / 3;
+}
+
+.photo {
+  grid-area: 2 / 2 / 3 / -2;
+}
+
+.bio {
+  background-color: #A6E3E9;
+  padding: 15px;
+  font-size: 25px;
+  grid-area: 3 / 2 / 4 / 5;
+}
